@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>👁️ Curiosidades e Lendas | Óculos 2V PRO</title>
+  <link rel="icon" type="image/png" href="Perfil.png">  
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: radial-gradient(circle at center, #000 70%, #0a0a0a);
+      color: #fff;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      box-shadow: 0 0 40px rgba(0, 255, 229, 0.25);
+      max-width: 450px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-shadow: 0 0 15px #00ffe5;
+    }
+
+    p {
+      margin: 20px 0;
+      font-size: 1.1rem;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      color: #00ffe5;
+      font-weight: 600;
+    }
+
+    img {
+      width: 85%;
+      border-radius: 15px;
+      margin: 25px 0;
+      box-shadow: 0 0 20px rgba(0, 255, 229, 0.3);
+      transition: 0.3s;
+    }
+    img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 30px rgba(0, 255, 229, 0.5);
+    }
+
+    .cta a {
+      display: inline-block;
+      background: linear-gradient(90deg, #00ffe5, #0066ff);
+      color: #000;
+      text-decoration: none;
+      padding: 15px 45px;
+      border-radius: 40px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 0 25px #00ffe5;
+      transition: 0.3s;
+    }
+
+    .cta a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 40px #00ffe5;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    /* Fundo animado sutil */
+    .bg {
+      position: fixed;
+      inset: 0;
+      background: url('Background.jpg') center/cover no-repeat;
+      filter: brightness(0.3);
+      z-index: -2;
+      animation: zoomBg 25s ease-in-out infinite alternate;
+    }
+
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes zoomBg {
+      from { transform: scale(1); }
+      to { transform: scale(1.1); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="bg"></div>
+<div class="overlay"></div>
+
+<div class="container">
+  <h1>DESCANSE OS OLHOS!</h1></br>
+  <p>Sente seus olhos cansados? </br>Tem dificuldade de enxergar no Sol?</br></br>  
+  O <span class="highlight">Óculos 2V PRO</span> resolve todos os problemas.</p>
+
+  <img src="2VPro.png" alt="Óculos 2V PRO">
+
+  <div class="cta">
+    <a href="https://wa.me/5571986928166?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20produtos!" target="_blank">Adquira o Óculos 2V PRO!</a>
+  </div>
+</div>
+
+<footer>
+  © 2025 Curiosidades e Lendas — Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
