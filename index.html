@@ -3,135 +3,695 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>👁️ Curiosidades e Lendas | Óculos 2V PRO</title>
-  <link rel="icon" type="image/png" href="Perfil.png">  
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <meta name="description" content="Óculos 2V PRO - Promoção Relâmpago! 70% OFF + Frete GRÁTIS. Últimas unidades!">
+  <title>Óculos 2V PRO - 70% OFF + FRETE GRÁTIS | Últimas Unidades!</title>
+  <link rel="icon" type="image/png" href="2VPro.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary: #ff2d2d;
+      --secondary: #ff9c00;
+      --dark: #222;
+      --light: #fff8f2;
+      --gray: #555;
+      --light-gray: #f8f8f8;
+      --shadow: 0 8px 25px rgba(0,0,0,0.12);
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
 
     body {
-      font-family: 'Roboto', sans-serif;
-      background: radial-gradient(circle at center, #000 70%, #0a0a0a);
-      color: #fff;
-      overflow: hidden;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .container {
-      text-align: center;
-      padding: 30px;
-      background: rgba(0, 0, 0, 0.7);
-      border-radius: 20px;
-      box-shadow: 0 0 40px rgba(0, 255, 229, 0.25);
-      max-width: 450px;
-      animation: fadeIn 1.5s ease;
-    }
-
-    h1 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 2.2rem;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      text-shadow: 0 0 15px #00ffe5;
-    }
-
-    p {
-      margin: 20px 0;
-      font-size: 1.1rem;
-      color: #ccc;
+      background: var(--light);
+      color: var(--dark);
       line-height: 1.6;
+      overflow-x: hidden;
     }
 
-    .highlight {
-      color: #00ffe5;
+    /* === BARRA SUPERIOR FIXA === */
+    .top-alert {
+      background: linear-gradient(135deg, #ff1744, #ff6d00);
+      color: #fff;
+      text-align: center;
+      padding: 10px 15px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+      box-shadow: 0 4px 12px rgba(255,45,45,0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .top-alert i {
+      animation: blink 1.5s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    .countdown {
+      background: rgba(255,255,255,0.2);
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-weight: 800;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      backdrop-filter: blur(5px);
+    }
+
+    /* === HEADER === */
+    header {
+      background: #fff;
+      padding: 90px 20px 40px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: var(--primary);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--gray);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* === HERO SECTION === */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      padding: 80px 5%;
+      align-items: center;
+      background: linear-gradient(180deg, #fff 0%, #fff5eb 100%);
+      position: relative;
+    }
+
+    .hero-content {
+      animation: fadeInLeft 1s ease-out;
+    }
+
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .hero h2 {
+      font-size: 2.4rem;
+      color: var(--dark);
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--gray);
+      margin-bottom: 25px;
+    }
+
+    .hero-img {
+      text-align: center;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .hero-img img {
+      width: 100%;
+      max-width: 420px;
+      filter: drop-shadow(0 15px 30px rgba(0,0,0,0.15));
+      border-radius: 20px;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(1deg); }
+    }
+
+    /* === PREÇO PROMOCIONAL === */
+    .price-box {
+      background: linear-gradient(135deg, #ff1744, #ff6d00);
+      color: #fff;
+      padding: 35px 25px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(255,45,45,0.4);
+      transform: translateY(-20px);
+      position: relative;
+      overflow: hidden;
+      animation: pulse 2s infinite;
+    }
+
+    .price-box::before {
+      content: 'OFERTA RELÂMPAGO';
+      position: absolute;
+      top: 30px; right: -60px;
+      background: #fff;
+      color: var(--primary);
+      padding: 5px 45px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      transform: rotate(45deg);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+
+    .old-price {
+      font-size: 1.3rem;
+      text-decoration: line-through;
+      opacity: 0.8;
+      margin-bottom: 8px;
+    }
+
+    .new-price {
+      font-size: 3.8rem;
+      font-weight: 900;
+      margin: 10px 0;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .new-price sub {
+      font-size: 1.4rem;
       font-weight: 600;
     }
 
-    img {
-      width: 85%;
-      border-radius: 15px;
-      margin: 25px 0;
-      box-shadow: 0 0 20px rgba(0, 255, 229, 0.3);
-      transition: 0.3s;
-    }
-    img:hover {
-      transform: scale(1.03);
-      box-shadow: 0 0 30px rgba(0, 255, 229, 0.5);
-    }
-
-    .cta a {
+    .savings {
+      background: rgba(255,255,255,0.2);
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-weight: 700;
+      margin: 15px 0;
       display: inline-block;
-      background: linear-gradient(90deg, #00ffe5, #0066ff);
-      color: #000;
-      text-decoration: none;
-      padding: 15px 45px;
-      border-radius: 40px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      letter-spacing: 1px;
-      box-shadow: 0 0 25px #00ffe5;
-      transition: 0.3s;
     }
 
-    .cta a:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 40px #00ffe5;
+    .bonus {
+      margin-top: 15px;
+      font-size: 1rem;
+      font-weight: 600;
     }
 
-    footer {
-      position: absolute;
-      bottom: 15px;
-      width: 100%;
+    .bonus i {
+      color: #fff;
+      margin-right: 6px;
+    }
+
+    /* === CTA PRINCIPAL === */
+    .cta-main {
       text-align: center;
-      font-size: 0.8rem;
-      color: #777;
+      margin: 40px 0;
     }
 
-    /* Fundo animado sutil */
-    .bg {
-      position: fixed;
-      inset: 0;
-      background: url('Background.jpg') center/cover no-repeat;
-      filter: brightness(0.3);
-      z-index: -2;
-      animation: zoomBg 25s ease-in-out infinite alternate;
+    .btn-cta {
+      display: inline-block;
+      background: linear-gradient(135deg, #00c853, #64dd17);
+      color: #fff;
+      padding: 18px 40px;
+      border-radius: 50px;
+      font-size: 1.3rem;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(0,200,83,0.4);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
+    .btn-cta:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,200,83,0.5);
     }
 
-    @keyframes zoomBg {
-      from { transform: scale(1); }
-      to { transform: scale(1.1); }
+    .btn-cta::after {
+      content: '→';
+      margin-left: 10px;
+      font-weight: 900;
+    }
+
+    .trust-badges {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .trust-badges img {
+      height: 40px;
+      filter: grayscale(100%) opacity(0.7);
+      transition: var(--transition);
+    }
+
+    .trust-badges img:hover {
+      filter: grayscale(0%) opacity(1);
+    }
+
+    /* === BENEFÍCIOS === */
+    .benefits {
+      padding: 80px 5%;
+      background: #fff;
+      text-align: center;
+    }
+
+    .benefits h2 {
+      font-size: 2.2rem;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .benefit-card {
+      background: var(--light);
+      padding: 30px 20px;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .benefit-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 5px;
+      height: 100%;
+      background: linear-gradient(var(--primary), var(--secondary));
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .benefit-card:hover::before {
+      opacity: 1;
+    }
+
+    .benefit-card i {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+
+    .benefit-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      color: var(--dark);
+    }
+
+    .benefit-card p {
+      font-size: 0.95rem;
+      color: var(--gray);
+    }
+
+    /* === DEPOIMENTOS === */
+    .testimonials {
+      padding: 80px 5%;
+      background: linear-gradient(135deg, #f9f9f9, #fff);
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      font-size: 2.2rem;
+      margin-bottom: 50px;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .testimonial {
+      background: #fff;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      position: relative;
+      font-style: italic;
+    }
+
+    .testimonial::before {
+      content: '“';
+      position: absolute;
+      top: -10px; left: 20px;
+      font-size: 5rem;
+      color: var(--primary);
+      opacity: 0.1;
+      font-family: serif;
+    }
+
+    .stars {
+      color: #ffc107;
+      margin: 15px 0;
+    }
+
+    .author {
+      margin-top: 15px;
+      font-weight: 600;
+      color: var(--dark);
+      font-style: normal;
+    }
+
+    /* === GARANTIA === */
+    .guarantee {
+      background: var(--dark);
+      color: #fff;
+      text-align: center;
+      padding: 60px 5%;
+    }
+
+    .guarantee h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .guarantee p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 1.1rem;
+    }
+
+    .guarantee-badge {
+      background: linear-gradient(135deg, #ffd700, #ffb800);
+      color: #000;
+      padding: 20px;
+      border-radius: 20px;
+      display: inline-block;
+      font-weight: 800;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      box-shadow: 0 10px 25px rgba(255,215,0,0.4);
+    }
+
+    /* === FAQ === */
+    .faq {
+      padding: 80px 5%;
+      background: #fff;
+    }
+
+    .faq h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 50px;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+
+    .faq-question {
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.1rem;
+    }
+
+    .faq-question::after {
+      content: '+';
+      font-weight: 900;
+      color: var(--primary);
+    }
+
+    .faq-answer {
+      margin-top: 10px;
+      color: var(--gray);
+      display: none;
+    }
+
+    .faq-answer.active {
+      display: block;
+    }
+
+    /* === FOOTER === */
+    footer {
+      background: var(--dark);
+      color: #aaa;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--secondary);
+      text-decoration: none;
+    }
+
+    /* === RESPONSIVO === */
+    @media (max-width: 992px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .price-box {
+        transform: none;
+        margin: 30px 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.2rem; }
+      .hero h2 { font-size: 2rem; }
+      .new-price { font-size: 3rem; }
+      .btn-cta { font-size: 1.1rem; padding: 16px 30px; }
+    }
+
+    @media (max-width: 480px) {
+      .top-alert { font-size: 0.85rem; padding: 8px; gap: 10px; }
+      header h1 { font-size: 1.9rem; }
+      .new-price { font-size: 2.5rem; }
     }
   </style>
 </head>
 <body>
 
-<div class="bg"></div>
-<div class="overlay"></div>
-
-<div class="container">
-  <h1>DESCANSE OS OLHOS!</h1></br>
-  <p>Sente seus olhos cansados? </br>Tem dificuldade de enxergar no Sol?</br></br>  
-  O <span class="highlight">Óculos 2V PRO</span> resolve todos os problemas.</p>
-
-  <img src="2VPro.png" alt="Óculos 2V PRO">
-
-  <div class="cta">
-    <a href="https://wa.me/5571986928166?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20produtos!" target="_blank">Adquira o Óculos 2V PRO!</a>
+  <!-- BARRA SUPERIOR FIXA -->
+  <div class="top-alert">
+    <span><i class="fas fa-bolt"></i> ÚLTIMAS UNIDADES!</span>
+    <span>Oferta acaba em:</span>
+	<div class="countdown" id="countdown">02:59:59</div>
   </div>
-</div>
 
-<footer>
-  © 2025 Curiosidades e Lendas — Todos os direitos reservados.
-</footer>
+  <!-- HEADER -->
+  <header>
+    <div class="badge">Promoção Relâmpago</div>
+    <h1>Óculos 2V PRO</h1>
+    <p>Estilo premium, proteção total e conforto absoluto </br>Agora com <strong>70% OFF</strong> + <strong>Frete GRÁTIS!</strong></p>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Transforme seu olhar com tecnologia de ponta</h2>
+      <p>Design ergonômico, lentes anti-UV 400, estrutura ultraleve em titânio e policarbonato. Feito para durar e impressionar.</p>
+
+      <!-- PREÇO PROMOCIONAL -->
+      <div class="price-box">
+        <div class="old-price">De: <s>R$ 399,00</s></div>
+        <div class="new-price">R$ 149<sup>,00</sup></div>
+        <div class="bonus">
+          <p><i class="fas fa-check-circle"></i> Frete GRÁTIS para todo Brasil</p>
+          <p><i class="fas fa-check-circle"></i> Entrega em até 3 dias úteis</p>
+        </div>
+      </div>
+
+      <!-- CTA PRINCIPAL -->
+      <div class="cta-main">
+        <a href="https://wa.me/5571986928166?text=Quero%20GARANTIR%20meu%20%C3%93culos%202V%20PRO%20por%20R$%20149,90!" 
+           class="btn-cta" target="_blank">
+          Quero o meu agora!
+        </a>
+        <div class="trust-badges">
+          <img src="https://img.shields.io/badge/Pagamento-Seguro-green" alt="Pagamento Seguro">
+          <img src="https://img.shields.io/badge/Entrega-Rápida-blue" alt="Entrega Rápida">
+          <img src="https://img.shields.io/badge/Garantia-30%20dias-orange" alt="Garantia">
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-img">
+      <img src="2VPro.png" alt="Óculos 2V PRO - Design Premium">
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section class="benefits">
+    <h2>Por que milhares já escolheram o 2V PRO?</h2>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <i class="fas fa-feather-alt"></i>
+        <h3>Ultralight & Resistente</h3>
+        <p>Estrutura em titânio + policarbonato. Apenas 18g. Não pesa no nariz.</p>
+      </div>
+      <div class="benefit-card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Proteção Total UV400</h3>
+        <p>Bloqueia 100% dos raios UVA/UVB. Cuida da sua saúde ocular.</p>
+      </div>
+      <div class="benefit-card">
+        <i class="fas fa-glasses"></i>
+        <h3>Lentes Anti-Reflexo</h3>
+        <p>Visão nítida em qualquer luz. Perfeito para dirigir e telas.</p>
+      </div>
+      <div class="benefit-card">
+        <i class="fas fa-star"></i>
+        <h3>Design Exclusivo</h3>
+        <p>Estilo moderno que combina com qualquer look. Do casual ao formal.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="testimonials">
+    <h2>O que nossos clientes dizem</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <p>"Melhor óculos que já tive! Leve, confortável e o design é incrível. Recomendo!"</p>
+        <div class="stars">★★★★★</div>
+        <div class="author">- Mariana S., São Paulo</div>
+      </div>
+      <div class="testimonial">
+        <p>"Comprei na promoção e me arrependi de não ter comprado dois. Entrega super rápida!"</p>
+        <div class="stars">★★★★★</div>
+        <div class="author">- João P., Rio de Janeiro</div>
+      </div>
+      <div class="testimonial">
+        <p>"As lentes são perfeitas para quem passa o dia no celular. Zero cansaço visual."</p>
+        <div class="stars">★★★★★</div>
+        <div class="author">- Carla M., Belo Horizonte</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>Perguntas Frequentes</h2>
+    <div class="faq-item">
+      <div class="faq-question">O frete é realmente grátis?<span></span></div>
+      <div class="faq-answer">Sim! Frete GRÁTIS para todo o Brasil via Correios ou transportadora.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Em quantos dias chega?<span></span></div>
+      <div class="faq-answer">Entrega expressa em até 3 dias úteis para capitais. Interior até 7 dias.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Posso parcelar?<span></span></div>
+      <div class="faq-answer">Sim! Até 12x sem juros no cartão via WhatsApp.</div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <div class="cta-main" style="padding: 60px 5%; background: linear-gradient(135deg, #fff, #fff5eb);">
+    <a href="https://wa.me/5571986928166?text=Quero%20GARANTIR%20meu%20%C3%93culos%202V%20PRO%20por%20R$%20149,90!" 
+       class="btn-cta" target="_blank" style="font-size: 1.4rem;">
+      SIM, QUERO MEU 2V PRO AGORA!
+    </a>
+    <p style="margin-top: 20px; color: var(--gray);"><strong>Menos de 20 unidades restantes!</strong></p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 <strong>Óculos 2V PRO</strong> — Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- SCRIPT CONTADOR -->
+  <script>
+    function startCountdown(duration) {
+      let timer = duration, hours, minutes, seconds;
+      const display = document.getElementById('countdown');
+      setInterval(() => {
+        hours = String(Math.floor(timer / 3600)).padStart(2, '0');
+        minutes = String(Math.floor((timer % 3600) / 60)).padStart(2, '0');
+        seconds = String(timer % 60).padStart(2, '0');
+
+        display.textContent = `${hours}:${minutes}:${seconds}`;
+
+        if (--timer < 0) timer = 0;
+      }, 1000);
+    }
+
+    window.onload = () => {
+      startCountdown(3 * 60 * 60 - 1); // Começa com 2:59:59
+    };
+
+    // FAQ Toggle
+    document.querySelectorAll('.faq-question').forEach(item => {
+      item.addEventListener('click', () => {
+        const answer = item.nextElementSibling;
+        answer.classList.toggle('active');
+        item.querySelector('span').textContent = answer.classList.contains('active') ? '−' : '+';
+      });
+    });
+  </script>
 
 </body>
 </html>
