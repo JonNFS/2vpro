@@ -17,14 +17,14 @@ O projeto simula uma **landing page de venda direta**, com design chamativo, ani
 
 ## 💡 Funcionalidades
 
-- 🧭 **Barra superior fixa** com contador regressivo em tempo real  
-- 💥 **Seção de destaque (Hero)** com imagem e descrição do produto  
-- 💰 **Bloco de preço promocional** com destaque para desconto e benefícios  
-- 🛒 **Botão CTA (Chamada para Ação)** integrado ao **WhatsApp**  
-- ⭐ **Depoimentos de clientes** com estrelas de avaliação  
-- ❓ **Seção FAQ interativa** (abre/fecha perguntas)  
-- 🛡️ **Seções de benefícios e garantia**  
-- 📱 **Design totalmente responsivo** (desktop, tablet e mobile)  
+- **Barra superior fixa** com contador regressivo em tempo real  
+- **Seção de destaque (Hero)** com imagem e descrição do produto  
+- **Bloco de preço promocional** com destaque para desconto e benefícios  
+- **Botão CTA (Chamada para Ação)** integrado ao **WhatsApp**  
+- **Depoimentos de clientes** com estrelas de avaliação  
+- **Seção FAQ interativa** (abre/fecha perguntas)  
+- **Seções de benefícios e garantia**  
+- **Design totalmente responsivo** (desktop, tablet e mobile)  
 
 ---
 
@@ -42,7 +42,6 @@ O projeto simula uma **landing page de venda direta**, com design chamativo, ani
 🔗 Contato e Créditos
 
 Desenvolvido por Jonathan Nunes 💻
-📞 Contato WhatsApp (CTA): Clique aqui
 
 🧠 Licença
 
