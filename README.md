@@ -28,22 +28,18 @@ O projeto simula uma **landing page de venda direta**, com design chamativo, ani
 
 ---
 
-## 🧩 Estrutura do Projeto
-
-📂 projeto-2vpro/
-├── index.html # Página principal
-├── 2VPro.png # Imagem do produto (referenciada no HTML)
-└── README.md # Documento de descrição do projeto
-
 📸 Demonstração Visual
 
 <img width="1874" height="931" alt="image" src="https://github.com/user-attachments/assets/c8b4a14b-7c67-4aec-8e4f-32977a00038c" />
 
-🔗 Contato e Créditos
+---
+
+🔗 Créditos
 
 Desenvolvido por Jonathan Nunes 💻
+
+---
 
 🧠 Licença
 
 Este projeto é de uso livre para fins educacionais e portfólio.
-Não é permitido utilizar a marca Óculos 2V PRO para fins comerciais sem autorização.
